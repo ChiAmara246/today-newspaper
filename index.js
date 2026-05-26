@@ -73,25 +73,6 @@ function showSlide(i) {
   updateDots();
 }
 
-/* DOTS */
-function createDots() {
-  let dotsContainer = document.getElementById("dots");
-  for (let i = 0; i < news.length; i++) {
-    let dot = document.createElement("span");
-    dot.classList.add("dot");
-    dot.onclick = () => showSlide(i);
-    dotsContainer.appendChild(dot);
-  }
-}
-
-function updateDots() {
-  let dots = document.getElementsByClassName("dot");
-  for (let i = 0; i < dots.length; i++) {
-    dots[i].classList.remove("active");
-  }
-  dots[index].classList.add("active");
-}
-
 /* NEXT / PREV */
 function nextSlide() {
   index = (index + 1) % news.length;
@@ -153,3 +134,80 @@ slider.addEventListener("touchend", (e) => {
 createDots();
 showSlide(0);
 
+function toggleMenu(){
+document.getElementById("links").classList.toggle("show");
+document.getElementById("overlay").classList.toggle("show");
+}
+
+function closeMenu(){
+document.getElementById("links").classList.remove("show");
+document.getElementById("overlay").classList.remove("show");
+}
+
+function toggleMenuAbout(){
+document.getElementById("linksAbout").classList.toggle("show");
+document.getElementById("overlay").classList.toggle("show");
+}
+
+function closeMenu(){
+document.getElementById("linksAbout").classList.remove("show");
+document.getElementById("overlay").classList.remove("show");
+}
+
+function toggleMenu(){
+document.getElementById("links").classList.toggle("show");
+document.getElementById("overlay").classList.toggle("show");
+}
+
+function closeMenu(){
+document.getElementById("links").classList.remove("show");
+document.getElementById("overlay").classList.remove("show");
+}function toggleMenu(){
+document.getElementById("links").classList.toggle("show");
+document.getElementById("overlay").classList.toggle("show");
+}
+
+function closeMenu(){
+document.getElementById("links").classList.remove("show");
+document.getElementById("overlay").classList.remove("show");
+}function toggleMenu(){
+document.getElementById("links").classList.toggle("show");
+document.getElementById("overlay").classList.toggle("show");
+}
+
+function closeMenu(){
+document.getElementById("links").classList.remove("show");
+document.getElementById("overlay").classList.remove("show");
+}function toggleMenu(){
+document.getElementById("links").classList.toggle("show");
+document.getElementById("overlay").classList.toggle("show");
+}
+
+function closeMenu(){
+document.getElementById("links").classList.remove("show");
+document.getElementById("overlay").classList.remove("show");
+}function toggleMenu(){
+document.getElementById("links").classList.toggle("show");
+document.getElementById("overlay").classList.toggle("show");
+}
+
+function closeMenu(){
+document.getElementById("links").classList.remove("show");
+document.getElementById("overlay").classList.remove("show");
+}function toggleMenu(){
+document.getElementById("links").classList.toggle("show");
+document.getElementById("overlay").classList.toggle("show");
+}
+
+function closeMenu(){
+document.getElementById("links").classList.remove("show");
+document.getElementById("overlay").classList.remove("show");
+}function toggleMenu(){
+document.getElementById("links").classList.toggle("show");
+document.getElementById("overlay").classList.toggle("show");
+}
+
+function closeMenu(){
+document.getElementById("links").classList.remove("show");
+document.getElementById("overlay").classList.remove("show");
+}
