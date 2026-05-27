@@ -7,8 +7,12 @@
         <link rel="stylesheet" type="text/css" href="../autrepage.css">
         <script src="../../index.js"></script>
         <style>
-                        /* POPUP WINDOW */
-            .popup{
+            
+            /* POPUP WINDOW */
+            .popup2{
+                display: none;
+            }
+            .popup, .popup2{
                 position:fixed;
                 top:50%;
                 left:50%;
@@ -23,7 +27,7 @@
                 z-index:2000;
             }
 
-            .popup button{
+            .popup button, popup2 button{
                 margin-top:15px;
                 padding:8px 15px;
                 border:none;
@@ -51,11 +55,11 @@
             }
             a{
                 text-decoration: none;
+                color: black;
             }
 
-            .about-us p{
-                text-decoration: none;
-                padding: 2px;
+            .about-us{
+                padding: 10px;
             }
         </style>
     </head>
@@ -80,8 +84,9 @@
         <h4 id="dateheure"></h4>
 
         <nav >
-            <div class="dot" onclick="toggleMenuAbout()">⋮⋮</div>
-            <ul id = "articleList" class="navlist"></li>
+            <div class="dot" onclick="toggleMenuAbout()">☰</div>
+            <ul id = "articleList" class="navlist">
+
             	<li><a href="../../index.html">Home</a></li>
             	<li><a href="../education/education.html">Education</a></li>
             	<li><a href="../politics/politics.html">Politics</a></li>
@@ -94,7 +99,7 @@
             
             </ul>
             <div class="search-box">
-            	<input type="test" id="seaarchInput" placeholder="Search articles... " onkeyup="searchFunction()">
+            	<input type="text" id="seaarchInput" placeholder="Search articles... " onkeyup="searchFunction()">
             	<button>🔍</button>
             </div>
         </nav>
@@ -144,10 +149,10 @@
                     <p alt="call our office">☎️: +234 9135004200</p>
                     <p alt="call for personnal assistance">📞: +234 8139704177</p>
                     <p><a href="mailto:todaynewspapaer@gmail.com" alt="send us and email">✉️: todaynewspapaer@gmail.com</a></p>
-                    <p alt="our location"><a href="https://maps.app.goo.gl/2A75kmczoF2HZVJ4A?g_st=iwb">📍: lagos lekki</p></a>
-                    <p onclick="openPopup()"><a href="#">📤: send a form</a></p>
+                    <p alt="our location"><a href="https://maps.app.goo.gl/2A75kmczoF2HZVJ4A?g_st=iwb">📍: lagos lekki</a></p>
+                    <p><a href="#" onclick="openPopup()" return false;>📤: send a form</a></p>
                     <!-- POPUP -->
-                    <div class="popup" id="popup2">
+                    <div class="popup2" id="popup2">
                         <div class="popup-content">
                             <span class="close" onclick="closePopup()">&times;</span>
                             <h2>choose a form</h2>
@@ -180,7 +185,7 @@
 
                     <div class="imageTrack">
                         <img src="../images/WhatsApp Image 2569-05-17 at 09.50.51.jpeg">
-                        <img src="../images/today_bus_500px.jpg">
+                        <img src="../images/today_bus_500px.jpg" atl="Today newspaper bus">
                         <img src="../images/office_image_500px.jpg">
                     </div>
 
