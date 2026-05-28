@@ -264,7 +264,6 @@ nav a:hover{
 .container section{
     border-top:2px solid #0b2c5f;
     margin-bottom:30px;
-    padding: 20px;
 }
 
 .container section div{
@@ -386,8 +385,28 @@ footer{
     }
 
     .aside{
-        width:100%;
+        display: flex;
+        position: sticky;
+        bottom: 0;
+        height:200px;
+        width: 100%;
+        padding-bottom: 15px;
     }
+
+    .frameBox{
+        height:200px;
+        width: 300px;
+    }
+
+    #whatsapp img{
+        width:120px;
+    }
+    #whatsapp{
+        width: 120px;
+        padding: 0%;
+        margin: 30px;
+    }
+
 }
 
 /* PHONE */
@@ -454,17 +473,27 @@ footer{
         box-sizing:border-box;
     }
 
+    .aside{
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        bottom: 0;
+        height:200px;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
     .frameBox{
         height:200px;
+        width: 300px;
     }
 
     #whatsapp img{
-        width:140px;
+        width:120px;
     }
     #whatsapp{
-        width:140px;
+        width: 120px;
         padding: 0%;
-        justify-content: none;
         margin: 10px;
     }
 
@@ -474,15 +503,6 @@ footer{
     }
     #dateheure{
         display: none;
-    }
-    .aside{
-        display: flex;
-        justify-content: space-between;
-        position: sticky;
-        bottom: 0;
-        height:200px;
-        width: 100%;
-        padding-bottom: 15px;
     }
 }
 
