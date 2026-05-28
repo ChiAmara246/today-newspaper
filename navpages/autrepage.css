@@ -301,6 +301,7 @@ nav a:hover{
     box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
+
 .aside h3{
     background:#0b2c5f;
     color:white;
@@ -360,6 +361,8 @@ nav a:hover{
     50%{opacity:0.5;}
     100%{opacity:1;}
 }
+
+/*FOOTER*/
 
 footer{
     background:#0b2c5f;
@@ -452,11 +455,17 @@ footer{
     }
 
     .frameBox{
-        height:300px;
+        height:200px;
     }
 
     #whatsapp img{
         width:140px;
+    }
+    #whatsapp{
+        width:140px;
+        padding: 0%;
+        justify-content: none;
+        margin: 10px;
     }
 
     footer{
@@ -465,6 +474,15 @@ footer{
     }
     #dateheure{
         display: none;
+    }
+    .aside{
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        bottom: 0;
+        height:200px;
+        width: 100%;
+        padding-bottom: 15px;
     }
 }
 
