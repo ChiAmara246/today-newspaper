@@ -173,60 +173,71 @@ document.getElementById("linksAbout").classList.remove("show");
 document.getElementById("overlay").classList.remove("show");
 }
 
-function toggleMenu(){
-document.getElementById("links").classList.toggle("show");
+function toggleMenuAnnounces(){
+document.getElementById("linksAnnounces").classList.toggle("show");
 document.getElementById("overlay").classList.toggle("show");
 }
 
 function closeMenu(){
-document.getElementById("links").classList.remove("show");
+document.getElementById("linksAnnounces").classList.remove("show");
 document.getElementById("overlay").classList.remove("show");
-}function toggleMenu(){
-document.getElementById("links").classList.toggle("show");
+}
+
+function toggleMenuEconomy(){
+document.getElementById("linksEconomy").classList.toggle("show");
 document.getElementById("overlay").classList.toggle("show");
 }
 
 function closeMenu(){
-document.getElementById("links").classList.remove("show");
+document.getElementById("linksEconomy").classList.remove("show");
 document.getElementById("overlay").classList.remove("show");
-}function toggleMenu(){
-document.getElementById("links").classList.toggle("show");
-document.getElementById("overlay").classList.toggle("show");
 }
 
+function toggleMenuEducation(){
+document.getElementById("linksEducation").classList.toggle("show");
+document.getElementById("overlay").classList.toggle("show");
+}
 function closeMenu(){
-document.getElementById("links").classList.remove("show");
+document.getElementById("linksEducation").classList.remove("show");
 document.getElementById("overlay").classList.remove("show");
-}function toggleMenu(){
-document.getElementById("links").classList.toggle("show");
+}
+
+function toggleMenuEntertainment(){
+document.getElementById("linksEntertainment").classList.toggle("show");
 document.getElementById("overlay").classList.toggle("show");
 }
 
 function closeMenu(){
-document.getElementById("links").classList.remove("show");
+document.getElementById("linksEntertainment").classList.remove("show");
 document.getElementById("overlay").classList.remove("show");
-}function toggleMenu(){
-document.getElementById("links").classList.toggle("show");
+}
+
+function toggleMenuLaugh(){
+document.getElementById("linksLaugh").classList.toggle("show");
 document.getElementById("overlay").classList.toggle("show");
 }
 
 function closeMenu(){
-document.getElementById("links").classList.remove("show");
+document.getElementById("linksLaugh").classList.remove("show");
 document.getElementById("overlay").classList.remove("show");
-}function toggleMenu(){
-document.getElementById("links").classList.toggle("show");
+}
+
+function toggleMenuPolitics(){
+document.getElementById("linksPolitics").classList.toggle("show");
 document.getElementById("overlay").classList.toggle("show");
 }
 
 function closeMenu(){
-document.getElementById("links").classList.remove("show");
+document.getElementById("linksPolitics").classList.remove("show");
 document.getElementById("overlay").classList.remove("show");
-}function toggleMenu(){
-document.getElementById("links").classList.toggle("show");
+}
+
+function toggleMenuToday(){
+document.getElementById("linksToday").classList.toggle("show");
 document.getElementById("overlay").classList.toggle("show");
 }
 
 function closeMenu(){
-document.getElementById("links").classList.remove("show");
+document.getElementById("linksToday").classList.remove("show");
 document.getElementById("overlay").classList.remove("show");
 }
