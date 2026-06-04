@@ -1,8 +1,8 @@
 body{
-    margin:0;
+    margin:0 5px 0;
     font-family:Arial,sans-serif;
-    background:#f4f4f4;
-    width:100%;
+    background:#fafafa;
+    width:99%;
     overflow-x:hidden;
 }
 
@@ -10,14 +10,12 @@ body{
 
 header{
     position: relative;
-    background:white;
     padding:10px 15px;
     display:flex;
     align-items:center;
     justify-content:center;
-    border-top:2px solid #0b2c5f;
-    border-bottom:2px solid #0b2c5f;
-    margin:10px 0 15px;
+    border-bottom:1px solid rgb(215, 215, 215);
+    margin: 0 0 15px;
 }
 
 header img{
@@ -29,19 +27,28 @@ header img{
 
 /* DATE */
 
-#dateheure{
-    background:black;
-    opacity:0.8;
-    text-align:center;
-    color:white;
-    padding:5px 10px;
-    position:fixed;
-    bottom:10px;
-    right:10px;
-    z-index:999;
-    border-radius:5px;
-    font-size:12px;
+.subnav{
+    border-bottom:1px solid rgb(215, 215, 215)
 }
+.subnav ul{
+    display:flex;
+    flex-wrap:wrap;
+    list-style:none;
+    gap:15px;
+    padding-top:10px;
+    padding-left: 0;
+    margin:0;
+}
+.subnav li, .subnav a{
+    color:rgb(182, 182, 182);
+    font-size:12px;
+    text-decoration: none;
+}
+
+.subnav a:hover{
+    text-decoration: underline;
+}
+
 
 /* NAVIGATION */
 
@@ -49,7 +56,7 @@ nav{
     position:sticky !important;
     top:0;
     background:#0b2c5f;
-    padding:10px 15px;
+    padding:5px 15px;
     display:flex;
     align-items:center;
     z-index: 1000;
@@ -130,7 +137,7 @@ nav a:hover{
 .links{
     display: none;
     position:fixed;
-    top:0;
+    top: 50px;
     left:-100%;
     width:250px;
     height:auto;
@@ -162,7 +169,7 @@ nav a:hover{
 .slider{
     position:relative;
     width:100%;
-    height:450px;
+    height:340px;
     overflow:hidden;
     z-index:0;
 }
@@ -233,47 +240,74 @@ nav a:hover{
 /* ARTICLES */
 
 .container{
-    width:72%;
+    width:75%;
+    display: block;
+}
+.h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin: 10px;
+    border-bottom: 1px solid rgb(215, 215, 215);
 }
 
-.container h2{
-    background:#0b2c5f;
-    color:white;
-    width:200px;
-    padding:10px;
-    text-align:center;
-    border-radius:5px;
+.h2 a{
+    font-size: 10px;
+    color: rgba(131, 3, 3, 0.982);
+    text-decoration: none;
 }
 
-.container section{
-    border-top:2px solid #0b2c5f;
-    margin-bottom:30px;
+.h2 a:hover{
+    text-decoration: underline;
+}
+h2{
+    color:rgb(38, 38, 38);
+    font-size: 18px;
+    padding: 0%;
 }
 
-.container section div{
+.latestNews div{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    grid-template-columns:2fr 1fr;
     gap:15px;
 }
+.latestNews article:first-child{
+    grid-row:span 3;
+    min-height:420px;
+    border: 1px solid rgba(133, 78, 78, 0.982);
+}
+.latestNews article{
+    min-height:200px;
+}
+section div{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:10px;
+}
 
-.container article{
-    border:1px solid #0b2c5f;
-    border-radius:10px;
+article{
+    border:1px solid rgb(215, 215, 215);
     background:white;
-    min-height:300px;
+    min-height:200px;
     overflow:hidden;
     transition:0.3s;
 }
 
-.container article:hover{
+article:hover{
     transform:translateY(-5px);
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
-
+.editor{
+    width: 130%;
+}
+.editor h2{
+    border-bottom: 1px solid rgba(83, 18, 18, 0.982);
+}
 /* ASIDE */
 
 .aside{
-    width:28%;
+    width:20%;
 }
 
 .aside aside{
@@ -455,7 +489,9 @@ footer{
         width:100%;
         box-sizing:border-box;
     }
-
+    .editor{
+        width: 100%;
+    }
     .aside{
         display: flex;
         justify-content: space-between;
