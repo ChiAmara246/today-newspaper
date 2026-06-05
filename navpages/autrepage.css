@@ -1,8 +1,8 @@
 body{
-    margin:0;
+    margin:0 5px 0;
     font-family:Arial,sans-serif;
-    background:#f4f4f4;
-    width:100%;
+    background:#fafafa;
+    width:99%;
     overflow-x:hidden;
 }
 
@@ -10,14 +10,12 @@ body{
 
 header{
     position: relative;
-    background:white;
     padding:10px 15px;
     display:flex;
     align-items:center;
     justify-content:center;
-    border-top:2px solid #0b2c5f;
-    border-bottom:2px solid #0b2c5f;
-    margin:10px 0 15px;
+    border-bottom:1px solid rgb(215, 215, 215);
+    margin: 0 0 15px;
 }
 
 header img{
@@ -27,16 +25,28 @@ header img{
     margin:0;
 }
 
-#dateheure{
-    background-color: black;
-    opacity: 0.6;
-    text-align: center;
-    color: white;
-    padding: 5px;
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    z-index: 2;
+/* DATE */
+
+.subnav{
+    border-bottom:1px solid rgb(215, 215, 215)
+}
+.subnav ul{
+    display:flex;
+    flex-wrap:wrap;
+    list-style:none;
+    gap:15px;
+    padding-top:10px;
+    padding-left: 0;
+    margin:0;
+}
+.subnav li, .subnav a{
+    color:rgb(182, 182, 182);
+    font-size:12px;
+    text-decoration: none;
+}
+
+.subnav a:hover{
+    text-decoration: underline;
 }
 
 /* NAVIGATION */
@@ -45,7 +55,7 @@ nav{
     position:sticky !important;
     top:0;
     background:#0b2c5f;
-    padding:10px 15px;
+    padding:5px 15px;
     display:flex;
     align-items:center;
     z-index: 1000;
@@ -133,7 +143,7 @@ nav a:hover{
     color:white;
     opacity: 0.8;
     flex-direction:column;
-    padding:130px 20px;
+    padding:150px 20px;
     gap:20px;
     transition:0.4s;
     z-index: 2;
@@ -157,7 +167,7 @@ nav a:hover{
 .slider{
     position:relative;
     width:100%;
-    height:450px;
+    height:340px;
     overflow:hidden;
     z-index:0;
 }
@@ -246,19 +256,38 @@ nav a:hover{
     padding:10px;
 }
 
-/* ARTICLES */
+/* ARTICLE pagination */
 
-.container{
-    width:72%;
+#dotsP{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    padding:20px;
+    flex-wrap:nowrap;
 }
 
-.container h2{
-    background:#0b2c5f;
-    color:white;
-    width:200px;
-    padding:10px;
-    text-align:center;
-    border-radius:5px;
+.dotP{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    padding: 2px;
+    cursor:pointer;
+    text-align: center;
+}
+
+.dotP:hover{
+    background:rgba(204, 204, 205, 0.5) !important;
+    color: black;
+}
+
+.dotP.active{
+    background:rgba(30, 71, 146, 0.5) !important;
+    
+}
+
+.container{
+    width:75%;
 }
 
 .container section{
@@ -268,12 +297,12 @@ nav a:hover{
 
 .container section div{
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    gap:15px;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:12px;
 }
 .container section div:first-child{
     grid-column: span 2;
-    height: 200px;
+    height: 170px;
 }
 .container article{
     border:0.5px solid grey;
@@ -288,33 +317,54 @@ nav a:hover{
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
+.editor div{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:6px;
+}
+.editor{
+    margin: 0;
+}
+.editor h2{
+    border-bottom: 1px solid rgba(83, 18, 18, 0.982);
+}
+.editor article{
+    min-height:160px;
+}
+
+section h2{
+    font-size: 20px;
+}
 /* ASIDE */
 
 .aside{
-    width:28%;
+    width:23%;
 }
 
 .aside aside{
-    background:white;
-    margin-bottom:20px;
-    border-radius:10px;
+    border:1px solid rgb(215, 215, 215);
+    margin-bottom:10px;
     overflow:hidden;
+    height: 450px;
     box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    animation:blink 0s linear infinite;
 }
 
-
 .aside h3{
-    background:#0b2c5f;
-    color:white;
+    color:#1a3660;
     margin:0;
     padding:10px;
     text-align:center;
 }
-
 /* IMAGE SLIDE */
 
-.frameBox{
-    height:500px;
+#frameBox{
+    width: 100%;
+    overflow: hidden;
+    height:400px;
+    animation:blink 0s linear infinite;
+    border: none;
+    box-shadow: none;
 }
 
 .imageTrack{
@@ -324,10 +374,10 @@ nav a:hover{
     animation:moveImages 9s infinite;
 }
 
-.imageTrack img{
-    width:100%;
-    height:100%;
+#frameBox img{
+    width: 220px;
     object-fit:cover;
+    padding: 30px;
 }
 
 @keyframes moveImages{
@@ -349,10 +399,12 @@ nav a:hover{
     justify-content:center;
     padding:20px;
     animation:blink 1s linear infinite;
+    height: 100px;
+    border-radius: 10px;
 }
 
 #whatsapp img{
-    width:180px;
+    width:80px;
     max-width:100%;
     border-radius:15px;
 }
@@ -370,10 +422,12 @@ footer{
     color:white;
     text-align:center;
     padding:20px;
-    margin-top:30px;
     font-size:14px;
 }
 
+ol li{
+    height: 80px;
+}
 /* TABLET */
 
 @media (max-width:900px){
@@ -415,8 +469,15 @@ footer{
 
 @media (max-width:700px){
 
+    ol{
+        display: none;
+    }
     .links{
         display: block;
+    }
+
+    .subnav{
+        display: none;
     }
 
     nav{
@@ -482,7 +543,9 @@ footer{
         width:100%;
         box-sizing:border-box;
     }
-
+    .editor{
+        width: 100%;
+    }
     .aside{
         display: flex;
         justify-content: space-between;

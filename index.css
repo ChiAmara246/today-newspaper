@@ -137,7 +137,7 @@ nav a:hover{
 .links{
     display: none;
     position:fixed;
-    top: 50px;
+    top: 0px;
     left:-100%;
     width:250px;
     height:auto;
@@ -145,7 +145,7 @@ nav a:hover{
     color:white;
     opacity: 0.8;
     flex-direction:column;
-    padding:130px 20px;
+    padding:150px 20px;
     gap:20px;
     transition:0.4s;
     z-index: 2;
@@ -307,20 +307,20 @@ article:hover{
 /* ASIDE */
 
 .aside{
-    width:20%;
+    width:23%;
 }
 
 .aside aside{
-    background:white;
+    border:1px solid rgb(215, 215, 215);
     margin-bottom:20px;
-    border-radius:10px;
     overflow:hidden;
+    height: 300px;
     box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    animation:blink 1s linear infinite;
 }
 
 .aside h3{
-    background:#0b2c5f;
-    color:white;
+    color:#1a3660;
     margin:0;
     padding:10px;
     text-align:center;
@@ -328,8 +328,13 @@ article:hover{
 
 /* IMAGE SLIDE */
 
-.frameBox{
-    height:500px;
+#frameBox{
+    width: 100%;
+    overflow: hidden;
+    height:400px;
+    animation:blink 0s linear infinite;
+    border: none;
+    box-shadow: none;
 }
 
 .imageTrack{
@@ -339,10 +344,10 @@ article:hover{
     animation:moveImages 9s infinite;
 }
 
-.imageTrack img{
-    width:100%;
-    height:100%;
+#frameBox img{
+    width: 220px;
     object-fit:cover;
+    padding: 30px;
 }
 
 @keyframes moveImages{
@@ -364,10 +369,12 @@ article:hover{
     justify-content:center;
     padding:20px;
     animation:blink 1s linear infinite;
+    height: 100px;
+    border-radius: 10px;
 }
 
 #whatsapp img{
-    width:180px;
+    width:80px;
     max-width:100%;
     border-radius:15px;
 }
@@ -410,7 +417,7 @@ footer{
         padding-bottom: 15px;
     }
 
-    .frameBox{
+    #frameBox{
         height:200px;
         width: 300px;
     }
@@ -429,6 +436,10 @@ footer{
 /* PHONE */
 
 @media (max-width:700px){
+
+    .subnav{
+        display: none;
+    }
 
     .links{
         display: block;
@@ -502,7 +513,7 @@ footer{
         padding-bottom: 15px;
     }
 
-    .frameBox{
+    #frameBox{
         height:200px;
     }
 
@@ -513,6 +524,7 @@ footer{
         width:120px;
         padding: 0%;
         margin: 10px;
+        height:180px;
     }
 
     footer{

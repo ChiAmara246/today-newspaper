@@ -8,11 +8,17 @@
         <script src="../../index.js"></script>
     </head>
     <body>
+        <div class="subnav">
+            <ul>
+                <li id="dateheure"></li>
+                <li><a href="../laugh/laugh.html">Laugh It Out</a></li>                
+                <li><a href="../about/about.html">About Us</a></li>
+            </ul>
+        </div>
 
         <header>
         <img src="../../todaynpLogo.jpeg" alt="Today Newspaper Logo">
         </header>
-        <h4 id="dateheure"></h4>
         <nav>
             <div class="dot" onclick="toggleMenuEducation()">☰</div>
             <ul id = "articleList" class="navlist">
@@ -22,9 +28,8 @@
                 <li><a href="../economy/economy.html">Economy</a></li>
                 <li><a href="../entertainment/entertainment.html">Entertainment</a></li>
                 <li><a href="../today/today.html">Trending NEWS</a></li>
-                <li><a href="../announces/announces.html">Announces</a></li>
-                <li><a href="../laugh/laugh.html">Laugh It Out</a></li>
-                <li><a href="../about/about.html">About Us</a></li>
+                <li><a href="../announces/announces.html">Jobs & Opportunities</a></li>
+                <li><a href="../press&events/pressEvent.html">Press & Events</a></li>
             </ul>
             <div class="search-box">
             	<input type="test" id="seaarchInput" placeholder="Search articles... " onkeyup="searchFunction()">
@@ -45,7 +50,8 @@
                 <a href="../economy/economy.html">Economy</a>
                 <a href="../entertainment/entertainment.html">Entertainment</a>
                 <a href="../today/today.html">Trending NEWS</a>
-                <a href="../announces/announces.html">Announces</a>
+                <a href="../announces/announces.html">Jobs & Opportunities</a>
+                <a href="../press&events/pressEvent.html">Press & Events</a>
                 <a href="../laugh/laugh.html">Laugh It Out</a>
                 <a href="../about/about.html">About Us</a>
             </div>
@@ -90,22 +96,46 @@
                         </article>
                         
                     </div>
+                    <div id="dotsP">
+                        <span class="dotP active">1</span>
+                        <span class="dotP">2</span>
+                        <span class="dotP">3</span>
+                        <span class="dotP">4</span>
+                        <span class="dotP">5</span>
+                    </div>
                 </section>
-                
+                <section class ="editor">
+                    <h2>Editor's Picks</h2>
+                    <div>
+                        <article>
+                            <h3> </h3>
+                        </article>
+                        <article>
+                            <h3> </h3>
+                        </article>
+                        <article>
+                            <h3> </h3>
+                        </article>
+                        <article>
+                            <h3> </h3>
+                        </article>
+                    </div>
+                </section>
             </div>
+            
             <div class="aside">
-                <aside class="frameBox">
+                <aside id="frameBox">
                 <h3>Today newspaper team</h3>
 
                     <div class="imageTrack">
-                        <img src="../images/WhatsApp Image 2569-05-17 at 09.50.51.jpeg">
-                        <img src="../images/today_bus_500px.jpg">
-                        <img src="../images/office_image_500px.jpg">
+                        <img src="../../images/WhatsApp Image 2569-05-17 at 09.50.51.jpeg">
+                        <img src="../../images/today_bus_500px.jpg">
+                        <img src="../../images/office_image_500px.jpg">
                     </div>
 
                 </aside>
                 <aside id="whatsapp">
-                    <a href="https://chat.whatsapp.com/JRep0h9StkDKcaHAel0TeN?mode=gi_t"><img src="images/images-8.jpeg"/></a>
+                    <a href="https://chat.whatsapp.com/JRep0h9StkDKcaHAel0TeN?mode=gi_t"><img src="../../images/images-8.jpeg"/></a>
                 </aside>
             </div>     
         </div>

@@ -241,3 +241,12 @@ function closeMenu(){
 document.getElementById("linksToday").classList.remove("show");
 document.getElementById("overlay").classList.remove("show");
 }
+
+const dots = document.querySelectorAll('.dotP');
+
+dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+        dots.forEach(d => d.classList.remove('active'));
+        dot.classList.add('active');
+    });
+});
