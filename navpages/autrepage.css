@@ -6,6 +6,10 @@ body{
     overflow-x:hidden;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 /* HEADER */
 
 header{
@@ -293,6 +297,7 @@ nav a:hover{
 .container section{
     border-top:2px solid #0b2c5f;
     margin-bottom:30px;
+    padding:20px 0;
 }
 
 .container section div{
@@ -300,14 +305,14 @@ nav a:hover{
     grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
     gap:12px;
 }
-.container section div:first-child{
+.container section div:nth-child(2){
     grid-column: span 2;
-    height: 170px;
+    grid-row: span 2;
 }
 .container article{
     border:0.5px solid grey;
     background:white;
-    min-height:300px;
+    min-height:200px;
     overflow:hidden;
     transition:0.3s;
 }
@@ -543,9 +548,7 @@ ol li{
         width:100%;
         box-sizing:border-box;
     }
-    .editor{
-        width: 100%;
-    }
+    
     .aside{
         display: flex;
         justify-content: space-between;
