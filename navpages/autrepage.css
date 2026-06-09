@@ -531,7 +531,10 @@ ol li{
     .container section .topstory{
         grid-column: 1/-1;
     }
-
+    .container section div:nth-child(2){
+        grid-column: none;
+        grid-row: auto;
+    }
     .topstory article{
         height: 200px;
         aspect-ratio: auto;
